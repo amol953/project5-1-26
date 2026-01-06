@@ -28,4 +28,20 @@ public class MyStepdefs {
     public void userEnterNextPage() {
         System.out.println("on next page");
     }
+
+    @When("user enter username {string}")
+    public void user_enter_username(String Un) {
+        System.out.println(" the username is :"+Un
+        );
+    }
+
+    @When("user enter password {string}")
+    public void user_enter_password(String Passwd) {
+        System.out.println("the password is :"+Passwd);
+    }
+
+    @Then("User enter next page and text {string} should be compared")
+    public void user_enter_next_page_and_text_should_be_compared(String text) {
+        System.out.println("the enter text is "+text);
+    }
 }
